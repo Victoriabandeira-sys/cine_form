@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body class="bg-black text-white font-body p-8">
+    <main class="max-w-7xl min-h-dvh bg-white/5 rounded-3xl p-4 mx-auto border border-white/15">
+        <header class="flex flex-col items-center justify-between gap-4 lg:flex-row">
+            
+            <h1 class="font-title text-red text-4xl font-bold leading-tight md:text-5xl">Cine Form</h1>
+
+            <figure class="flex gap-3">
+                <img src="./img/usuário1.jpg" alt="Usuário1" class="size-10 border-2 bg-card object-cover cursor-pointer hover:animate-spin duration-500">
+                <img src="./img/usuário2.jpg" alt="Usuário2" class="size-10 border-2 bg-card object-cover cursor-pointer hover:animate-spin duration-500">
+                <img src="./img/usuário3.jpg" alt="Usuário3" class="size-10 border-2 bg-card object-cover cursor-pointer hover:animate-spin duration-500">
+                <img src="./img/usuário4.jpg" alt="Usuário4" class="size-10 border-2 bg-card object-cover cursor-pointer hover:animate-spin duration-500">
+                <img src="./img/usuário5.jpg" alt="Usuário5" class="size-10 border-2 bg-card object-cover cursor-pointer hover:animate-spin duration-500">
+                <img src="./img/usuário6.jpg" alt="Usuário6" class="size-10 border-2 bg-card object-cover cursor-pointer hover:animate-spin duration-500">
+            </figure>
+        </header>
+
+        <form name="form-cine" id="form-cine" method="get" action="">
+            <p class="my-5 font-medium text-gray text-center text-balance lg:text-left font-title"> O que faz você dar play?</p>
+
+            <fieldset class="border border-white/10 rounded-2xl bg-white/10 p-4">
+                <legend class="font-body text-lg font-bold  text-red-title px-2">01. Sobre você</legend>
+
+                <section class="grid gap-6 md:grid-cols-2">
+                    
+                    <div>
+                        <label for="nome" class=" block ml-2 text-sm mb-2 text-gray ">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required minlength="10" maxlength="30" class="border border-white/10 bg-card px-2 py-3 w-full rounded-lg outline-none focus:border-white focus:bg-white/10">
+                    </div>
+
+                    <div>
+                        <label for="idade" class=" block ml-2 text-sm mb-2 text-gray">Idade</label>
+                        <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required minlength="10" maxlength="120" class="border border-white/10 bg-card px-2 py-3 w-full rounded-lg outline-none focus:border-white focus:bg-white/10">
+                    </div>
+
+                    <div>
+                        <label for="email" class=" block ml-2 text-sm mb-2 text-gray">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite sei E-mail" required  maxlength="50" class="border border-white/10 bg-card px-2 py-3 w-full rounded-lg outline-none focus:border-white focus:bg-white/10">
+                    </div>
+
+                    <div>
+                        <label for="profissao" class=" block ml-2 text-sm mb-2 text-gray">Idade</label>
+                        <input type="text" id="profissao" name="profissao" placeholder="Digite sua Profissão" required minlength="10" maxlength="50" class="border border-white/10 bg-card px-2 py-3 w-full rounded-lg outline-none focus:border-white focus:bg-white/10">
+                    </div>
+
+                </section>
+            </fieldset>
+
+            <fieldset class="border border-white/10 rounded-2xl bg-white/10 p-4">
+
+                <legend class="font-body text-lg font-bold  text-red-title px-2">02. Suas Preferências</legend>
+
+                <section class="grid gap-6 md:grid-cols-2">
+
+                        <div>
+                            <label for="preferencia" class="block ml-2 text-sm mb-2 text-gray">Suas Preferências</label>
+
+                            <select name="preferencia" id="preferencia" required
+                                class="border border-white/10 bg-card px-2 py-3 w-full rounded-lg outline-none focus:border-white">
+                                <option value="" disabled selected>Selecione sua preferência</option>
+                                <option value="filmes">Filmes</option>
+                                <option value="series">Séries</option>
+                                <option value="ambos">Ambos</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="genero" class="block ml-2 text-sm mb-2 text-gray">Gênero favorito</label>
+
+                            <select name="genero" id="genero" required
+                                class="border border-white/10 bg-card px-2 py-3 w-full rounded-lg outline-none focus:border-white">
+                                <option value="" disabled selected>Selecione um gênero</option>
+                                <option value="terror">Terror</option>
+                                <option value="romance">Romance</option>
+                                <option value="comedia">Comédia</option>
+                                <option value="acao">Ação</option>
+                            </select>
+                        </div>
+                </section>
+            </fieldset>
+
+        </form>
+
+    </main>
+</body>
+</html>
